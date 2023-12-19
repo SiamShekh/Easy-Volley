@@ -1,8 +1,6 @@
 package com.volley.response;
 
 import android.content.Context;
-import android.util.Log;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -11,13 +9,13 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-public class String {
-    public static void RequestString (String url, Context context){
+public class Voller {
+    public static void RequestString (Voller url, Context context){
         RequestQueue queue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                new Response.Listener<String>() {
+                new Response.Listener<Voller>() {
                     @Override
-                    public void onResponse(String response) {
+                    public void onResponse(Voller response) {
                         //a
                     }
                 }, new Response.ErrorListener() {
