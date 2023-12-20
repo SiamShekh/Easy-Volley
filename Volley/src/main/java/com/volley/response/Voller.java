@@ -10,20 +10,19 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 public class Voller {
-    public static void RequestString (Voller url, Context context){
+    public static void RequestString (String url, Context context){
         RequestQueue queue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                new Response.Listener<Voller>() {
+                new Response.Listener<String>() {
                     @Override
-                    public void onResponse(Voller response) {
-                        //a
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
             }
         });
-
         queue.add(stringRequest);
     }
 }

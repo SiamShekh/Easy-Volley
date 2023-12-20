@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Volley
+        Voller.RequestString("https://ipinfo.io/ip",MainActivity.this);
     }
 }
